@@ -1,24 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-<title>My First Version of a Website</title>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <div class="container-1">
-
-    <header id="main-header">
-        <h1><strong>Welcome to my Site</strong></h1>
-        <hr>
-</div>
-<div class="container-4">
-<img src="img/1608787719654.jpg">
-</div>
-<div class="container-2">
-<a href="main.html">Go to Main Body</a>
-</div>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie-edge">
+		<title>Tom Wheeler - First Website</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<!-- I have added a margin shorthand class '.mb-5' which stands for margin-bottom: 25px; Check your css and you'll see what I mean -->
+		<div class="container mb-5">
+			<!-- Changed id to class below. As id is being used in two different files it can be considered repeatable and turned into a class -->
+			<header class="main-header">
+				<h1>
+					<strong>Welcome to my Site</strong>
+				</h1>
+				<hr>
+			</header>
+		</div>
+		<div class="container mb-5">
+			<!-- I have added an image container class separate from the outer container class. -->
+			<!-- This was any time you need an image you will have a default class to refer to -->
+			<div class="image-container">
+				<img src="img/1608787719654.jpg">
+			</div>
+		</div>
+		<div class="container align-center">
+			<a href="main.html">Go to Main Body</a>
+		</div>
+	</body>
 </html>

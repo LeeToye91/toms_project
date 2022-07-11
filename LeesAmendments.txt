@@ -1,0 +1,22 @@
+Overall good first go bud. Semantically you've used the correct HTML syntax/tags for the relevant text. Connected a css file which works fine. 
+A few pointers and updates below (also added notation to relevant files where I have updated).
+
+I've updated the spacing/tabs of your HTML files for readability. Depending on which IDE you're using it may not look the same your end
+so let me know if that's the case. 
+
+------------------------------------------------------------------
+
+- I have added your project to git. I'll walk you through how to pull this down. 
+
+- I've updated the title to be more specific to your project. 
+
+- Instead of '.container-1' class names I have changed it so the container class is generic. Anything more specific you can add additional classes
+for styling purposes.
+
+- I have added margin and alignment classes to the containers so the classes are not polluted with unnecessary properties. 
+
+- I have cleaned up your HTML tag css properties so they're in order. 
+
+- I have tidied up your css (see notation for more info).
+
+Any questions Tom, let me know happy to help :-) 
