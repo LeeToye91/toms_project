@@ -1,32 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie-edge">
-		<title>Tom Wheeler - First Website</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css">
-	</head>
-	<body>
-		<!-- I have added a margin shorthand class '.mb-5' which stands for margin-bottom: 25px; Check your css and you'll see what I mean -->
-		<div class="container mb-5">
-			<!-- Changed id to class below. As id is being used in two different files it can be considered repeatable and turned into a class -->
-			<header class="main-header">
-				<h1>
-					<strong>Welcome to my Site</strong>
-				</h1>
-				<hr>
-			</header>
-		</div>
-		<div class="container mb-5">
-			<!-- I have added an image container class separate from the outer container class. -->
-			<!-- This was any time you need an image you will have a default class to refer to -->
-			<div class="image-container">
-				<img src="img/1608787719654.jpg">
-			</div>
-		</div>
-		<div class="container align-center">
-			<a href="main.html">Go to Main Body</a>
-		</div>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie-edge">
+        <title>Tom Wheeler - Home</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div class="container-fluid px-3">
+            <div class="row align-items-center">
+                <div class="column col-12">
+                    <a href="index.html">
+                        <h1><strong>Tom Wheeler</strong></h1>
+                    </a>
+                    <p>Composer - Video Editor - Web Developer</p>
+                </div>
+            </div>
+            <div class="container-fluid px-3">
+                <div class="row align-items-center">
+                    <div class="column col-6">
+                        <div class="image-grid">
+                            <img src="img/tom_profile.jpg">
+                            <div class="main-text">
+                				<!-- Added a generic alignment class instead of specifically on the h3/h4 tag -->
+                				<h3 class="align-left">About Me</h3>
+                				<p>
+                					I am a composer with over ten years of experience in writing music. I was born in Cardiff and lived in Wales my whole life.
+                					I am have a Bachalor's degree in Music Composition from the Royal Welsh College of Music and Drama.
+                				</p>
+                				<h3 class="align-left">My Work</h3>
+                				<p>
+                					I have written for a wide range of instrumental groups from
+                						<a href= "https://soundcloud.com/thomas-wheeler-150576347/on-the-ocean-at-sunset" target ="_blank">solo instruments</a>
+                					to full orchestras. I also have experience in writing
+                						<a href= "https://soundcloud.com/thomas-wheeler-150576347/electronic-drone-piece-v05" target ="_blank">electronic and ambient music</a>.
+                					My main passion is in
+                						<a href="https://soundcloud.com/thomas-wheeler-150576347/the-vixens-that-come-from-the-sea" target ="_blank">songwriting</a>
+                					where I have developed skills in lyric writing. My work can mostly be found on Youtube and Soundcloud but more platforms will be utilised in the future.
+                				</p>
+                            </div>
+                            <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/gnj5lXdKO74?si=Xj_7ajSdA9AjIFQI"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                            <iframe width="100%" height="300"
+                            scrolling="no"
+                            frameborder="no"
+                            allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1851336396&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/thomas-wheeler-150576347" title="Thomas Wheeler" target="_blank" style="color: #cccccc; text-decoration: none;">Thomas Wheeler</a> · <a href="https://soundcloud.com/thomas-wheeler-150576347/contemplations-within-the-otic" title="Contemplations within the Otic" target="_blank" style="color: #cccccc; text-decoration: none;">Contemplations within the Otic</a></div>
+                            <a href="cv.html">
+                                <img src="img/cv.button.webp" alt="bg" class="image">
+                            </a>
+                            <a href="https://www.youtube.com/@TomWheelerMusic">
+							    <img src="img/yt.logo.webp" alt="yt" class="image">
+    						</a>
+    						<a href="https://soundcloud.com/thomas-wheeler-150576347">
+    							<img src="img/sc.logo.webp" alt="sc" class="image">
+    						</a>
+    						<a href=https://www.linkedin.com/in/tom-wheeler-783985317/>
+    							<img src="img/li.logo.webp" alt="li" class="image">
+    						</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="align-center">
+            <div class="container">
+                <p>&copy; Tom Wheeler 2024 </p>
+            </div>
+        </footer>
+    </body>
 </html>

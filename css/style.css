@@ -1,139 +1,132 @@
-/* Generic Tag styling*/
-/* Typically used to override browser default styling */
 body {
-    background-color:black;
-    font: normal 16px Verdana, Geneva, sans-serif;
-    line-height: 1.3em;
+    background-color:white;
+    font: normal 16px Franklin Gothic, Geneva, sans-serif;
+    line-height: 1.6em;
 }
 
 h1 {
-    color:white;
+    color:black;
     text-align: center;
 }
 
 h2 {
-    color:white;
+    color:gray;
     text-align: center;
+    font: 20px;
 }
 
 h3 {
     color:gray;
 }
 
-h4 {
-    color:gray;
-}
-
 p {
-    color:white;
-    margin: 0;
+    color:black;
+    text-align: center;
 }
 
 a {
     text-align: center;
-    text-decoration: underline;
-    color:white;
+    color:black;
 }
 
-th {
-    color:gray;
-
-}
-
-tr {
-    color:white;
-}
-
-td {
-    text-decoration: none;
-}
-
-
-/* Specific Classes */
-
-/* Removed as only need alignment class - see bottom of this file */
-/* main-footer{
-    text-align: center;
-} */
-
-/* 
-I have changed .container-1 to .container as a generic class and .main-text as a more specific class
-Personally I would say there is only one styling rule for all container classes which is margin:auto;
-That being said I would add a specific margin class such as - 
-.m-auto {
-    margin:auto
-}
-and then add that to the relevant container div. Keeps the classes clean for additional styling if need be
-*/
-
-.container {
-    margin: auto;
-}
-
-.main-header {
-    width: 65%;
-    margin: auto;
-}
-
-.main-text{
-    text-align: center;
-    width: 65%;
-    margin: auto;
-}
-
-/* text-align property applies to block containers. The img tag is an inline element so on it's own the */
-/* display property needs to be changed to use margin correctly. */
-/* 
-.container-4 {
-    margin: auto;
-    text-align: center;
-} 
-*/
-/* .image-container replaces container-4 after separating class logic */
-/* Added a border just to show you where I have changed it */
 img {
     margin: 20px 0;
     padding: 10px;
 }
 
-.image-container {
-    margin: auto;
+footer {
+    color:black;
 }
 
-.image-container > img {
-    display: block;
-    margin: 0 auto;
-    border: 1px solid white;
-}
-
-/* Not needed a generic container class will address this. Any width specific properties can be set in specific classes */
-/* .container-2{
-    width: 30%;
+.container {
+    flex: 50%;
     margin: auto;
-    text-align: center;
-} */
-
-.nav-links {
-    width: 30%;
-    margin: auto;
-    padding: 30px;
+    width: 100%;
     text-align: center;
 }
 
-/* Generical classes styling */
-/* As CSS is CASCADING it means rules lower down have more precedence (if above rules aren't triggered in the specificity hierarchy */
-/* https://www.w3schools.com/css/css_specificity.asp */
-
-.align-left {
-    text-align: left;
-}
-.align-center {
-    text-align: center;
+.container-fluid {
+    flex: 50%;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
 }
 
-.mb-3 {
-    margin-bottom: 15px;
+.column {
+    position: relative;
+    min-height: 1px;
 }
+
+.col-12 {
+    flex: 50%;
+    max-width: 50%;
+}
+.col-6 {
+    flex: 50%;
+    max-width: 50%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: center;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.image-row {
+    margin: auto;
+    width: 1000px;
+    justify-content: center;
+}
+
+.image-grid {
+    margin: auto;
+    width: 89%;
+
+}
+
+.image {
+    opacity: 1;
+    transition: .5s ease;
+    border: 1px solid black;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.image:hover {
+    opacity: 0.3;
+    transition: .5s ease;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.align-items-center {
+    align-items: center;
+    justify-content: center;
+}
+
+.px-3 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-header {
+    width: 70%;
+    margin: auto;
+}
+
 .mb-5 {
+    align-items: center;
+    justify-content: center;
     margin-bottom: 25px;
-}
